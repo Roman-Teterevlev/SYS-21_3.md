@@ -16,7 +16,7 @@ rsync -a --exclude '*file*' --progress . /tmp/backup # исключить из �
 rsync -a --exclude '.*' --progress --verbose --checksum-choice=md5 -c --out-format="%C" . /tmp/backup ; md5sum * # исключить из синхронизации файлы, содержащие скрытые файлы + подсчет и вывод хэш-сумм файлов
 ```
 
-
+![alt text](https://github.com/Roman-Teterevlev/SYS-21_3.md/blob/main/3.md_1.1.png)
 
 ---
 
@@ -45,7 +45,7 @@ sudo systemctl status cron
 
 ``` cat /var/log/rsync.log ```
 
-
+![alt text](https://github.com/Roman-Teterevlev/SYS-21_3.md/blob/main/3.md_2.1.png)
 
 ---
 
@@ -69,7 +69,9 @@ dd if=/dev/zero of=file.txt  bs=50M  count=1 #создаем файл больш
 rsync -a --progress --bwlimit=1000 file.txt root@185.244.180.169:/root/rsync_tmp #синхронизация файла между серверами с ограничением скорости передачи данных 1 Мбит/с
 ```
 
-
+![alt text](https://github.com/Roman-Teterevlev/SYS-21_3.md/blob/main/3.md_3.1.png)
+![alt text](https://github.com/Roman-Teterevlev/SYS-21_3.md/blob/main/3.md_3.2.png)
+![alt text](https://github.com/Roman-Teterevlev/SYS-21_3.md/blob/main/3.md_3.3.png)
 
 ---
 
